@@ -11,10 +11,7 @@
 		C33F1D1E1860F4A800D3EE14 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C33F1D1D1860F4A800D3EE14 /* CoreGraphics.framework */; };
 		C33F1D201860F4A800D3EE14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C33F1D1F1860F4A800D3EE14 /* UIKit.framework */; };
 		C33F1D261860F4A800D3EE14 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C33F1D241860F4A800D3EE14 /* InfoPlist.strings */; };
-		C33F1D4B1860F4C400D3EE14 /* main_ARMv7.s in Sources */ = {isa = PBXBuildFile; fileRef = C33F1D4A1860F4C400D3EE14 /* main_ARMv7.s */; };
-		C36F5B20186167E5001F75A5 /* Utilities_ARMv7.s in Sources */ = {isa = PBXBuildFile; fileRef = C36F5B1F186167E5001F75A5 /* Utilities_ARMv7.s */; };
-		C3BFE152188B13AA00A67483 /* View_ARMv7.s in Sources */ = {isa = PBXBuildFile; fileRef = C36F5B1D1861674D001F75A5 /* View_ARMv7.s */; };
-		C3FB5AD818D3B19500FBED82 /* AppDelegate_ARMv7.s in Sources */ = {isa = PBXBuildFile; fileRef = C36F5B1B186165F2001F75A5 /* AppDelegate_ARMv7.s */; };
+		C33F1D4B1860F4C400D3EE14 /* main.s in Sources */ = {isa = PBXBuildFile; fileRef = C33F1D4A1860F4C400D3EE14 /* main.s */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,10 +22,7 @@
 		C33F1D231860F4A800D3EE14 /* iOSAppInAssembly-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSAppInAssembly-Info.plist"; sourceTree = "<group>"; };
 		C33F1D251860F4A800D3EE14 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C33F1D341860F4A800D3EE14 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		C33F1D4A1860F4C400D3EE14 /* main_ARMv7.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = main_ARMv7.s; sourceTree = "<group>"; };
-		C36F5B1B186165F2001F75A5 /* AppDelegate_ARMv7.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = AppDelegate_ARMv7.s; sourceTree = "<group>"; };
-		C36F5B1D1861674D001F75A5 /* View_ARMv7.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = View_ARMv7.s; sourceTree = "<group>"; };
-		C36F5B1F186167E5001F75A5 /* Utilities_ARMv7.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = Utilities_ARMv7.s; sourceTree = "<group>"; };
+		C33F1D4A1860F4C400D3EE14 /* main.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = main.s; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,10 +70,7 @@
 		C33F1D211860F4A800D3EE14 /* iOSAppInAssembly */ = {
 			isa = PBXGroup;
 			children = (
-				C36F5B1B186165F2001F75A5 /* AppDelegate_ARMv7.s */,
-				C36F5B1D1861674D001F75A5 /* View_ARMv7.s */,
-				C33F1D4A1860F4C400D3EE14 /* main_ARMv7.s */,
-				C36F5B1F186167E5001F75A5 /* Utilities_ARMv7.s */,
+				C33F1D4A1860F4C400D3EE14 /* main.s */,
 				C33F1D221860F4A800D3EE14 /* Supporting Files */,
 			);
 			path = iOSAppInAssembly;
@@ -122,12 +113,19 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = richardjrossiii;
+				TargetAttributes = {
+					C33F1D171860F4A800D3EE14 = {
+						DevelopmentTeam = SDSLU2QT5X;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = C33F1D131860F4A800D3EE14 /* Build configuration list for PBXProject "iOSAppInAssembly" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = C33F1D0F1860F4A800D3EE14;
@@ -156,10 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3FB5AD818D3B19500FBED82 /* AppDelegate_ARMv7.s in Sources */,
-				C3BFE152188B13AA00A67483 /* View_ARMv7.s in Sources */,
-				C33F1D4B1860F4C400D3EE14 /* main_ARMv7.s in Sources */,
-				C36F5B20186167E5001F75A5 /* Utilities_ARMv7.s in Sources */,
+				C33F1D4B1860F4C400D3EE14 /* main.s in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,21 +251,28 @@
 		C33F1D451860F4A800D3EE14 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "Apple Distribution: Muhammad Muizzsuddin (SDSLU2QT5X)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SDSLU2QT5X;
+				ENABLE_BITCODE = NO;
 				GCC_DYNAMIC_NO_PIC = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				GCC_STRICT_ALIASING = NO;
 				INFOPLIST_FILE = "iOSAppInAssembly/iOSAppInAssembly-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_NO_PIE = YES;
 				OTHER_CFLAGS = "-mno-thumb";
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.muiz.idn.com.richardjrossiii.iOSAppInAssembly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = armv7;
+				VALID_ARCHS = "armv7 arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -278,21 +280,29 @@
 		C33F1D461860F4A800D3EE14 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "Apple Distribution: Muhammad Muizzsuddin (SDSLU2QT5X)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SDSLU2QT5X;
+				ENABLE_BITCODE = NO;
 				GCC_DYNAMIC_NO_PIC = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				GCC_STRICT_ALIASING = NO;
 				INFOPLIST_FILE = "iOSAppInAssembly/iOSAppInAssembly-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_NO_PIE = YES;
 				OTHER_CFLAGS = "-mno-thumb";
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.muiz.idn.com.richardjrossiii.iOSAppInAssembly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = armv7;
+				VALID_ARCHS = "armv7 arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
